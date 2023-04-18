@@ -14,18 +14,15 @@ import numpy as np
 l1, l2, l3, l4, eta = symbols('lambda[0] lambda[1] lambda[2] lambda[3] eta')
 lf0, lf1 = symbols('lambda_f[0] lambda_f[1]')
 
-#QG related constants
-a_const = symbols('a_const')
-b_const = symbols('b_const')
-qg_mass0_sq = symbols('qg_mass0_sq')
-qg_mass2_sq = symbols('qg_mass0_sq')
+#Horava related constants
+# TODO : add
 
 PI = 3.14159265358979323846
 kappa = 1/(16*PI)
 
 # Additional parameters for damping term
-R0 = symbols('QUADGRAV_ETA_R0')
-ep1, ep2 = symbols('QUADGRAV_ETA_POWER[0] QUADGRAV_ETA_POWER[1]')
+R0 = symbols('HORAVA_ETA_R0')
+ep1, ep2 = symbols('HORAVA_ETA_POWER[0] HORAVA_ETA_POWER[1]')
 
 # declare variables (BSSN vars)
 a   = dendro.scalar("alpha", "[pp]")
